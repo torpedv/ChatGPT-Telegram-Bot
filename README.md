@@ -2,40 +2,29 @@
 <img src="./assets/logo-3071751.jpg">
 </p>
 
-# 🤖️ TeleChat
 
-[English](README.md) | [Chinese](README_CN.md)
 
-<p align="center">
-  <a href="https://t.me/+_01cz9tAkUc1YzZl">
-    <img src="https://img.shields.io/badge/Join Telegram Group-blue?&logo=telegram">
-  </a>
-  <a href="https://t.me/chatgpt68_bot">
-    <img src="https://img.shields.io/badge/Telegram Bot-grey?&logo=Probot">
-  </a>
-   <a href="https://hub.docker.com/repository/docker/yym68686/chatgpt">
-    <img src="https://img.shields.io/docker/pulls/yym68686/chatgpt?color=blue" alt="docker pull">
-  </a>
-</p>
+
 
 ChatGPT Telegram Bot is a powerful Telegram bot that supports OpenAI-compatible large language model APIs. It enables users to have efficient conversations and information searches on Telegram. For support of other models from providers such as Anthropic, Gemini, Vertex AI, Azure, AWS, XAI, Cohere, Groq, Cloudflare, OpenRouter, etc., please use my other project, [uni-api](https://github.com/yym68686/uni-api), to integrate them. This helps reduce maintenance costs. Thank you for your understanding.
 
 ## ✨ Features
 
-- **Multiple AI Models**: Supports APIs compatible with the OpenAI format. For other models from providers such as Anthropic, Gemini, Vertex AI, Azure, AWS, XAI, Cohere, Groq, Cloudflare, OpenRouter, etc., please integrate them using [uni-api](https://github.com/yym68686/uni-api). Also supports one-api/new-api. Utilizes self-developed API to request backend [SDK](https://github.com/yym68686/aient), does not rely on OpenAI SDK.
-- **Multimodal Question Answering**: Supports question answering for voice, audio, images, and PDF/TXT/MD/python documents. Users can directly upload files in the chat box for use.
-- **Model Grouping System**: Organize AI models into logical groups for easier selection. Models can be grouped by provider (GPT, Claude, etc.) or by capability. Models without an explicit group are automatically placed in an "OTHERS" group. This makes model selection more intuitive, especially when many models are available.
-- **Group Chat Topic Mode**: Supports enabling topic mode in group chats, isolating APIs, dialogue history, plugin configurations, and preferences between topics.
-- **Rich plugin system**: Supports web search (DuckDuckGo and Google), URL summarization, ArXiv paper summarization, and code interpreter.
-- **User-friendly interface**: Allows flexible switching of models within the chat window and supports streaming output similar to a typewriter effect. Supports precise Markdown message rendering, utilizing another of my [projects](https://github.com/yym68686/md2tgmd).
-- **Efficient Message Processing**: Asynchronously processes messages, answers questions in a multi-threaded manner, supports isolated dialogues, and provides unique dialogues for different users.
-- **Long Text Message Handling**: Automatically merges long text messages, breaking through Telegram's single message length limit. When the bot's response exceeds the Telegram limit, it will be split into multiple messages.
-- **Multi-user Dialogue Isolation**: Supports dialogue isolation and configuration isolation, allowing selection between multi-user and single-user modes.
-- **Question Prediction**: Automatically generates follow-up questions, anticipating what users might ask next.
-- **Multi-language Interface**: Supports Simplified Chinese, Traditional Chinese, Russian and English interfaces.
-- **Whitelist, Blacklist, and Admin Settings**: Supports setting up whitelists, blacklists, and administrators.
-- **Inline Mode**: Allows users to @ the bot in any chat window to generate answers without needing to ask questions in the bot's chat window.
-- **Convenient Deployment**: Supports one-click koyeb, Zeabur, Replit deployment with true zero cost and idiot-proof deployment process. It also supports kuma anti-sleep, as well as Docker and fly.io deployment.
+- **Multiple AI Models**
+- **Multimodal Question Answering**
+- **Model Grouping System**
+- **Group Chat Topic Mode**
+- **Rich plugin system**
+- **User-friendly interface**
+- **Efficient Message Processing**
+- **Long Text Message Handling**
+- **Multi-user Dialogue Isolation**
+- **Question Prediction**
+- **Multi-language Interface**
+- **Whitelist, Blacklist, and Admin Settings**
+- **Inline Mode**
+- **Convenient Deployment**
+
 
 ## 🍃 Environment variables
 
@@ -101,30 +90,13 @@ Click the button below to automatically deploy using the pre-built Docker image 
 
 In the environment variables, fill in BOT_TOKEN, API, BASE_URL, and click the deploy button. WEB_HOOK environment variable can be left as is, and Koyeb will automatically assign a subdomain.
 
-### Repository deployment
 
-1. Fork this repository [Click to fork this repository](https://github.com/yym68686/ChatGPT-Telegram-Bot/fork)
-
-2. When deploying, you need to choose the repository method, set `Run command` to `python3 bot.py`, and set `Exposed ports` to `8080`.
-
-3. [Install pull](https://github.com/apps/pull) to automatically sync this repository.
-
-## Zeabur Remote Deployment
-
-One-click deployment:
-
-[![Deploy on Zeabur](https://zeabur.com/button.svg)](https://zeabur.com/templates/R5JY5O?referralCode=yym68686)
-
-If you need follow-up function updates, the following deployment method is recommended:
 
 - Fork this repository first, then register for [Zeabur](https://zeabur.com). Currently, Zeabur does not support free Docker container deployment. If you need to use Zeabur to deploy the bot for this project, you will need to upgrade to the Developer Plan. Fortunately, Zeabur has introduced their [sponsorship program](https://zeabur.com/docs/billing/sponsor), which offers a one-month Developer Plan to all contributors of this project. If you have features you'd like to enhance, feel free to submit pull requests to this project.
 - Import from your own Github repository.
 - Set the required environment variables, and redeploy.
 - If you need function updates in the follow-up, just synchronize this repository in your own repository and redeploy in Zeabur to get the latest functions.
 
-## Replit Remote Deployment
-
-[![Run on Repl.it](https://replit.com/badge/github/yym68686/ChatGPT-Telegram-Bot)](https://replit.com/new/github/yym68686/ChatGPT-Telegram-Bot)
 
 After importing the Github repository, set the running command
 
@@ -481,52 +453,10 @@ https://github.com/franalgaba/chatgpt-telegram-bot-serverless
 
 https://github.com/gpchelkin/scdlbot/blob/d64d14f6c6d357ba818e80b8a0a9291c2146d6fe/scdlbot/__main__.py#L8
 
-The markdown rendering of the message used is another [project](https://github.com/yym68686/md2tgmd) of mine.
-
 duckduckgo AI: https://github.com/mrgick/duck_chat
 
-## Sponsors
 
-We are grateful for the support from the following sponsors:
-<!-- $300+$380+¥1200+¥300+$30+$25+$20+¥50 -->
-- @fasizhuanqian: 300 USDT
 
-- @ZETA: $380
-
-- @yuerbujin: ¥1200
-
-- @RR5AM: ¥300
-
-- @IKUNONHK: 30 USDT
-
-- @miya0v0: 30 USDT
-
-- [@Zeabur](https://zeabur.com?referralCode=yym68686&utm_source=yym68686&utm_campaign=oss): $25
-
-- @Bill_ZKE: 20 USDT
-
-- @wagon_look: ¥50
-
-<!-- [![Deployed on Zeabur](https://zeabur.com/deployed-on-zeabur-dark.svg)](https://zeabur.com?referralCode=yym68686&utm_source=yym68686&utm_campaign=oss) -->
-
-## How to Sponsor Us
-
-If you would like to support our project, you can sponsor us through the following methods:
-
-1. [PayPal](https://www.paypal.me/yym68686)
-
-2. [USDT-TRC20](https://pb.yym68686.top/~USDT-TRC20), USDT-TRC20 Wallet Address: `TLFbqSv5pDu5he43mVmK1dNx7yBMFeN7d8`
-
-3. [WeChat](https://pb.yym68686.top/~wechat)
-
-4. [Alipay](https://pb.yym68686.top/~alipay)
-
-Thank you for your support!
-
-## Star History
-
-<a href="https://github.com/yym68686/ChatGPT-Telegram-Bot/stargazers">
-        <img width="500" alt="Star History Chart" src="https://api.star-history.com/svg?repos=yym68686/ChatGPT-Telegram-Bot&type=Date">
 </a>
 
 ## License
